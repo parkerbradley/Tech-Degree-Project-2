@@ -3,10 +3,99 @@
   <head>
     <meta charset="utf-8">
     <meta name=viewport content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@469&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Bradley's Portfolio</title>
+    <title>Student's Portfolio</title>
   </head>
   <body>
-
+    <header>
+      <h1>Student Name</h1>
+      <nav class="main-nav">
+        <ul class="nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="about clearfix">
+        <img src="images/responsive-layout-profile.png" class="about-photo" alt="profile photo">
+        <p class="about-copy">Hi! I'm a front end developer who loves responsive design and CSS. I recently finished a degree in front-end web development at Tree House and I'm excited to put my skills to use!</p>
+      </div>
+      <section class="skills" id="skills">
+        <h2>Skills</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>.Liquid</li>
+            <li>SEO</li>
+            <li>PPC</li>
+            <li>Social Media</li>
+          </ul>
+      </section>
+      <section class="portfolio">
+        <h2 id="portfolio">Portfolio</h2>
+        <div class="portfolio-entries clearfix">
+          <div class="entry">
+            <img src="images/portfolio-1.png" alt="portfolio 1">
+            <h3>Marketing Page</h3>
+            <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+          </div>
+          <div class="entry">
+            <img src="images/portfolio-2.png" alt="portfolio 2">
+            <h3>Search Page</h3>
+            <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+          </div>
+          <div class="entry">
+            <img src="images/portfolio-3.png" alt="portfolio 3">
+            <h3>Travel App</h3>
+            <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+          </div>
+          <div class="entry">
+            <img src="images/portfolio-4.png" alt="portfolio 4">
+            <h3>Map of Favorite Spots</h3>
+            <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+          </div>
+          <div class="entry">
+            <img src="images/portfolio-5.png" alt="portfolio 5">
+            <h3>Photo Gallery</h3>
+            <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+          </div>
+          <div class="entry">
+            <img src="images/portfolio-6.png" alt="portfolio 6">
+            <h3>Calculator</h3>
+            <p>Someone can enter the numbers they want, and press the big blue button and get the result.</p>
+          </div>
+        </div>
+      </section>
+      <aside id="contact">
+        <div class="contact">
+          <h2>Contact</h2>
+          <p>If you're interested in chatting or want more information on what I've been working on, I'd love to hear from you!</p>
+          <div class="contact-details">
+            <p>Phone <strong>+1 (111) 555-1234</strong></p>
+            <p>Email <a href="mailto:email@yoursite.com">email@yoursite.com</a></p>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer class="clearfix">
+      <p class="site-id">Student Name</p>
+      <p class="to-top"><a href="#">Back To Top</a></p>
+      <nav class="footer-nav">
+        <ul class="nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>

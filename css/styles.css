@@ -1,0 +1,278 @@
+/* element styles
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  color: #636363;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.about,
+.skills,
+.portfolio-entries,
+.contact,
+footer {
+  max-width: 90%;
+  margin: auto;
+  padding: 35px 0 0;
+}
+
+header,
+main {
+  text-align: center;
+}
+
+header {
+  background-color: #9c9c9c;
+  padding: 10px 0 10px 0;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #636363;
+}
+
+a:hover {
+  color: #1b7ab5;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 10px 0;
+  font-size: 1.5rem;
+  color: #1b7ab5;
+}
+
+p {
+  color: #9c9c9c;
+  line-height: 1.5em;
+}
+
+footer {
+  border-top: 1px solid #9c9c9c;
+}
+
+footer p {
+  font-weight: bold;
+}
+
+/* class styles
+   ========================================================================== */
+.main-nav li {
+  background-color: #fff;
+  color: #636363;
+  font-weight: 700;
+  padding: 10px 0;
+  margin: auto;
+  width: 90%;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+.main-nav li:hover {
+  color: #1b7ab5;
+}
+
+.about {
+  margin-bottom: 35px;
+  padding-top: 35px;
+}
+
+.about-photo {
+  width: 70%;
+}
+
+.skills {
+  padding-bottom: 35px;
+  border-top: 1px solid #9c9c9c;
+}
+
+.skills ul {
+  padding-top: 15px;
+}
+/* borrowed from project-1 stylesheet */
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #636363;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: #1b7ab5;
+}
+
+.portfolio {
+  background-color: #fff;
+  padding-top: 35px;
+}
+
+.portfolio img {
+  width: 100%;
+}
+
+.entry {
+  padding-bottom: 25px;
+}
+
+.contact {
+  padding-bottom: 35px;
+}
+
+.contact a {
+  font-weight: bold;
+  color: #9c9c9c;
+}
+
+.site-id {
+  float: left;
+  display: inline-block;
+  color: #636363;
+}
+
+.to-top {
+  float: right;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.footer-nav {
+  display: none;
+}
+
+/* id styles
+   ========================================================================== */
+/* adapted from https://gomakethings.com/how-to-prevent-anchor-links-from-scrolling-behind-a-sticky-header-with-one-line-of-css/ */
+#skills,
+#portfolio,
+#contact {
+  scroll-margin-top: 115px;
+}
+
+/* clearfix
+   ========================================================================== */
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/* media queries
+   ========================================================================== */
+@media (min-width: 768px) {
+  p {
+    font-size: 1.25rem;
+  }
+
+  /* sticky-nav --- */
+  header {
+    position: fixed;
+    padding-bottom: 1px;
+  }
+
+  main {
+    padding-top: 115px;
+  }
+
+  /* header --- */
+  .main-nav {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .main-nav li {
+    display: inline;
+    background-color: #9c9c9c;
+    padding: 0 15px;
+  }
+
+  .about-photo {
+    float: right;
+    max-width: 40%;
+    margin-left: 10px;
+  }
+
+  .about-copy {
+    text-align: left;
+  }
+
+  /* portfolio --- */
+  .entry {
+    float: left;
+    width: 50%;
+    padding: 0 5px 35px 5px;
+  }
+
+  /* contact --- */
+  .contact p {
+    max-width: 70%;
+    margin: auto;
+  }
+
+  .contact-details {
+    padding-top: 30px;
+  }
+
+  /* footer --- */
+  footer {
+    padding-bottom: 75px;
+  }
+
+  .to-top {
+    display: none;
+  }
+
+  .footer-nav {
+    display: inline-block;
+    float: right;
+    margin: 20px 0;
+  }
+
+  .footer-nav li {
+    display: inline;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* portfolio --- */
+  .about,
+  .portfolio-entries,
+  .contact,
+  footer {
+    max-width: 1125px;
+    width: 90%;
+  }
+
+  .entry {
+    width: 33.33%;
+  }
+}
